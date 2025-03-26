@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming - My Personal Website</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Irzi Rahmatullah</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="web-programming.html">Web Programming</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="web-hero">
+            <div class="web-hero-content">
+                <h1>Pemograman WEB</h1>
+                <p>Materi contoh program dari pertemuan 1 sampai pertemuan 6</p>
+            </div>
+        </section>
+
+        <section class="web-content">
+            <!-- htnl -->
+            <div class="topic-section">
+                <h2>HTML</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'html-structure')">Structure</button>
+                    <button class="tab-btn" onclick="openTab(event, 'html-forms')">Forms</button>
+                </div>
+
+                <div id="html-structure" class="tab-content active">
+                    <h3>Basic HTML Structure</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/basic html.png" alt="Basic HTML Structure image">
+                    </div>
+                </div>
+
+                <div id="html-forms" class="tab-content">
+                    <h3>HTML Forms</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/Form html.png" alt="HTML Forms image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- css -->
+            <div class="topic-section">
+                <h2>CSS</h2>
+                <div class="tabs">
+                    <button class="tab-btn" onclick="openTab(event, 'insert-css')">Insert CSS</button>
+                    <button class="tab-btn active" onclick="openTab(event, 'css-selectors')">Selectors</button>
+                </div>
+
+                <div id="insert-css" class="tab-content active">
+                    <h3>Insert CSS</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/inline css.png" alt="Insert CSS image">
+                    </div>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/internal css.png" alt="Insert CSS image">
+                    </div>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/eksternal css.png" alt="Insert CSS image">
+                    </div>
+                </div>
+
+                <div id="css-selectors" class="tab-content active">
+                    <h3>Selector</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/css selector.png" alt="CSS Selector image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- JS -->
+            <div class="topic-section">
+                <h2>JavaScript</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'js-variables')">Variables</button>
+                    <button class="tab-btn" onclick="openTab(event, 'js-functions')">Functions</button>
+                    <button class="tab-btn" onclick="openTab(event, 'js-operator')">Operator</button>
+                </div>
+
+                <div id="js-variables" class="tab-content active">
+                    <h3>Variables and Data Types</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/js1.png" alt="Variables and Data Types image">
+                    </div>
+                </div>
+
+                <div id="js-functions" class="tab-content">
+                    <h3>Functions</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/function js.png" alt="Functions image">
+                    </div>
+                </div>
+
+                <div id="js-operator" class="tab-content">
+                    <h3>Operator</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/operator.png" alt="Functions image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- php -->
+            <div class="topic-section">
+                <h2>PHP Basics</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'php-basic')">Basic PHP</button>
+                    <button class="tab-btn" onclick="openTab(event, 'php-data-type')">PHP Data Type</button>
+                    <button class="tab-btn" onclick="openTab(event, 'php-operator')">Operator PHP</button>
+                </div>
+
+                <div id="php-basic" class="tab-content active">
+                    <h3>Basic PHP</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/bsic php.png" alt="Basic PHP image">
+                    </div>
+                </div>
+
+                <div id="php-data-type" class="tab-content">
+                    <h3>PHP Data Type</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/tipe data php.png" alt="PHP Data Type image">
+                    </div>
+                </div>
+
+                <div id="php-operator" class="tab-content">
+                    <h3>PHP Operator</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/php operator.png" alt="PHP Operator image">
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="topic-section">
+                <h2>Alur Program</h2>
+
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'control-if')">If-Else</button>
+                    <button class="tab-btn" onclick="openTab(event, 'control-switch')">Switch</button>
+                    <button class="tab-btn" onclick="openTab(event, 'control-loops')">Loops</button>
+                </div>
+
+                <div id="control-if" class="tab-content active">
+                    <h3>If-Else Statements</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/if else php.png" alt="Functions image">
+                    </div>
+                </div>
+
+                <div id="control-switch" class="tab-content">
+                    <h3>Switch Statement</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/switch php.png" alt="Functions image">
+                    </div>
+                </div>
+
+                <div id="control-loops" class="tab-content">
+                    <h3>Loops</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/loop php.png" alt="Functions image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- php array -->
+            <div class="topic-section">
+                <h2>Arrays</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'array-indexed')">Index Array</button>
+                    <button class="tab-btn" onclick="openTab(event, 'array-assoc')">Associative Array</button>
+                </div>
+
+                <div id="array-indexed" class="tab-content active">
+                    <h3>Index Array</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/index array.png" alt="Index Array image">
+                    </div>
+                </div>
+
+                <div id="array-assoc" class="tab-content">
+                    <h3>Associative Arrays</h3>
+                    <div class="code-example">
+                        <img src="../public/images/web-report/asosiatif array.png" alt="Associative Arrays image">
+                    </div>
+                </div>
+
+                <div id="array-multi" class="tab-content">
+                    <h3>Multidimensional Arrays</h3>
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+// Create multidimensional array
+$students = array(
+array("John", 25, "Computer Science"),
+array("Sarah", 23, "Mathematics"),
+array("Mike", 22, "Physics")
+);
+
+// Access elements
+echo $students[0][0]; // John
+echo $students[1][2]; // Mathematics
+
+// Loop through array
+foreach ($students as $student) {
+echo "Name: " . $student[0] . ", Age: " . $student[1];
+}
+?&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 Irzi Rahmatullah. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/zaxchaxs" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/irzi-rahmatullah/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://web.facebook.com/Irzi.meghankhapthap" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // Remove active class from all tab buttons
+            const tabButtons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            // Show the current tab and add active class to the button
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
