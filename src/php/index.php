@@ -18,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // Set your email address where you want to receive messages
     $to = 'irzirahmatullah@gmail.com';
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -30,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email_body .= "Subject: $subject\n\n";
     $email_body .= "Message:\n$message\n";
     
-    // Send email (this will only work on a live server with mail configured)
+    // error (tempporary)
     $sent = mail($to, $subject, $email_body, $headers);
     
     if ($sent) {

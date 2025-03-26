@@ -7,7 +7,6 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active');
 });
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -31,13 +30,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Sticky header
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-// Animation on scroll
 const animateOnScroll = () => {
     const elements = document.querySelectorAll('.skill-card, .timeline-item, .interest-item');
     
@@ -52,7 +49,6 @@ const animateOnScroll = () => {
     });
 };
 
-// Set initial state for animated elements
 window.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.skill-card, .timeline-item, .interest-item');
     
@@ -68,7 +64,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('scroll', animateOnScroll);
 
-// Form validation
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -89,8 +84,6 @@ if (contactForm) {
             return;
         }
         
-        // Form is valid, you can submit it here
-        // For demonstration, we'll just show an alert
         alert('Form submitted successfully!');
         this.reset();
     });
