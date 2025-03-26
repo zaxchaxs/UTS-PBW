@@ -186,8 +186,6 @@ nav {
     animation: fadeIn 1.5s ease;
 }
 
-/* border: black solid 1px; */
-
 /* Overview Section */
 .overview {
     width: 100%;
@@ -799,6 +797,11 @@ footer {
     
     .burger.active .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
 }
 

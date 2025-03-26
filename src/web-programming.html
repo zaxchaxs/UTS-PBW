@@ -16,8 +16,8 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Me</a></li>
-                    <li><a href="web-programming.html">Web Programming</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="web-programming.html" class="active">Web Programming</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="burger">
@@ -205,29 +205,6 @@
                         <img src="../public/images/web-report/asosiatif array.png" alt="Associative Arrays image">
                     </div>
                 </div>
-
-                <div id="array-multi" class="tab-content">
-                    <h3>Multidimensional Arrays</h3>
-                    <div class="code-example">
-                        <pre><code>&lt;?php
-// Create multidimensional array
-$students = array(
-array("John", 25, "Computer Science"),
-array("Sarah", 23, "Mathematics"),
-array("Mike", 22, "Physics")
-);
-
-// Access elements
-echo $students[0][0]; // John
-echo $students[1][2]; // Mathematics
-
-// Loop through array
-foreach ($students as $student) {
-echo "Name: " . $student[0] . ", Age: " . $student[1];
-}
-?&gt;</code></pre>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -243,7 +220,7 @@ echo "Name: " . $student[0] . ", Age: " . $student[1];
         </div>
     </footer>
 
-    <script src="../js/index.js"></script>
+    <script src="js/index.js"></script>
     <script>
         function openTab(evt, tabName) {
             // Hide all tab content
